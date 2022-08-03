@@ -9,7 +9,7 @@ ssslify = SSLify(app)
 
 @app.route('/')
 def catch_all(path):
-    return Response("<h1>Flask</h1><p>You visited: /%s</p>" % path, mimetype="text/html")
+    return Response("<h1>Flask</h1><p>You visited: hello</p>", mimetype="text/html")
 
 
 @app.route('/webhook', methods=['POST'])
